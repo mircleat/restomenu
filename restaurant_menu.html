@@ -5,32 +5,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Shop Webpage</title>
+
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    
     <style>
-        .center {
-            text-align: center;
+        #bigimg-center {
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 80%;
+            width: 70%;
         }
+
+        #h1-center{
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+        }
+
+        .vt323-regular {
+            font-family: "VT323", monospace;
+            font-weight: 400;
+            font-style: normal;
+            color: black ;
+        }
+
+        ul { 
+            list-style-type: kannada ;
+        }
+        
+        form{
+            box-sizing:border-box ;
+            list-style:none;
+	        display:flex;
+	        flex:1 0 0%;
+	        justify-content:center;
+
+        }
+        
     </style>
 </head>
 <body>
     <header>
-        <h1 class="center"> Welcome to Clea's Coffee Shop!</h1>
+
+        <h1 id="h1-center" class="vt323-regular"> Welcome to Clea's Coffee Shop!</h1>
+
         <figure>
-            <img class="center" id ="header-img"
+            <img id="bigimg-center" id ="header-img"
             src="https://i.pinimg.com/originals/d8/9f/a3/d89fa383107571201d3b2673e4e9a51b.gif"
             alt="calm resto~"
             />
         </figure>
+
         <nav>
             <ul>
-                <li> <a href="#menu"> </a></li>
-                <li> <a href="#order-form"> </a></li>
+                <li> <a href="#menu" class="vt323-regular">Menu </a></li>
+                <li> <a href="#order-form" class="vt323-regular"> Order Form</a></li>
             </ul>
         </nav>
+
+        <!--Menu Section-->
+        <section>
+
+            <article>
+                <h3> </h3>
+                <img src="" alt=" "/>
+                <p> </p>
+            </article>
+
+            <article>
+                <h3> </h3>
+                <img src="" alt=" "/>
+                <p> </p>
+            </article>
+
+            <article>
+                <h3> </h3>
+                <img src="" alt=" "/>
+                <p> </p>
+            </article>
+
+        </section>
+
+        <!--Place Order Section-->
+        <section>
+            <form>
+                <!--order frorm-->
+                <label for ="item1">🥐 </label><input type="number" min="0">
+                <label for ="item2">☕ </label><input type="number" min="0">
+                <label for ="item3">🍞 </label><input type="number" min="0">
+                
+                <br>
+                <!--add on-->
+                <label for ="check1"> sugar? </label><input type="radio">
+            </form>
+        </section>
+
     </header>
-    
 </body>
 </html>
