@@ -26,6 +26,20 @@
             width: 70%;
         }
 
+        .food{
+            display: block;
+            width:150px;
+            margin-left: auto;
+            margin-right: auto;
+            align-self: center;
+        }
+
+        .food-text{
+            text-align: center;
+            font-size: 120%;
+        }
+
+
         .vt323-regular {
             font-family: "VT323", monospace;
             font-weight: 400;
@@ -33,22 +47,37 @@
             color: black ;
         }
 
-        ul { 
-            list-style-type: kannada ;
-        }
-        
-        form{
+        body{
             box-sizing:border-box ;
-            list-style:none;
 	        display:flex;
-	        flex:1 0 0%;
 	        justify-content:center;
-
         }
+      
+
+        ul{
+            display: inline-block;
+            text-align: left;
+            list-style-type: kannada ;
+            font-size: 170%;
+        }
+
+        .container{
+           
+            text-align: center;
+        }
+
+        .center{
+            text-align: center;
+        }
+
+        .bigtext{
+            font-size: 170%;  
+        }
+
         
     </style>
 </head>
-<body>
+<body class="vt323-regular">
     <header>
 
         <h1 id="h1-center" class="vt323-regular"> Welcome to Clea's Coffee Shop!</h1>
@@ -61,46 +90,65 @@
         </figure>
 
         <nav>
-            <ul>
-                <li> <a href="#menu" class="vt323-regular">Menu </a></li>
-                <li> <a href="#order-form" class="vt323-regular"> Order Form</a></li>
-            </ul>
+            <div class="container">
+                <ul class="myUL">
+                    <li> <a href="#menu" class="vt323-regular">Menu </a></li>
+                    <li> <a href="#order-form" class="vt323-regular"> Order Form</a></li>
+                </ul>
+            </div>
+            
         </nav>
 
+        <!--used chatggpt to make paragraphs about food bc lazy-->
         <!--Menu Section-->
-        <section>
-
-            <article>
-                <h3> </h3>
-                <img src="" alt=" "/>
-                <p> </p>
+        <section id="menu">
+            <article class="food-text" >
+                <h3 > CWASSAH </h3>
+                <img  class="food" src="crossaint.png"  alt="crossaint"/>
+                <p > A decadent croissant is a luxurious pastry with a golden, crisp exterior and a tender, airy interior that melts in the mouth. Its rich, buttery flavor, delicately balanced with a hint of sweetness and salt, makes each bite an indulgent experience and a symbol of culinary excellence. </p>
+            </article>
+            
+            <article class="food-text">
+                <h3> Cawffee</h3>
+                <img class ="food"src="coffee.png" alt="cawfee " class="food-right"/>
+                <p>Colombian coffee beans are renowned for their smooth, well-balanced flavor, often featuring bright acidity and notes of caramel, nuts, and chocolate. Grown in the ideal climate of the Andes mountains, these beans benefit from rich volcanic soil and perfect growing conditions, resulting in a consistently high-quality coffee. </p>
             </article>
 
-            <article>
-                <h3> </h3>
-                <img src="" alt=" "/>
-                <p> </p>
+            <article class="food-text">
+                <h3>Let's Get tha Bred!! </h3>
+                <img class="food" src="https://64.media.tumblr.com/fb303999a55f458e02e0d6a26950f378/tumblr_n0rbgg8YpU1snt98wo1_640.gifv" alt=" " class="food-left"/>
+                <p> Cute cat bread, often shaped and decorated to resemble adorable feline faces, combines the charm of cats with the deliciousness of freshly baked bread. This whimsical treat is popular in cafes and bakeries, delighting both cat lovers and food enthusiasts with its playful appearance and soft, fluffy texture.</p>
             </article>
-
-            <article>
-                <h3> </h3>
-                <img src="" alt=" "/>
-                <p> </p>
-            </article>
-
         </section>
 
         <!--Place Order Section-->
-        <section>
-            <form>
-                <!--order frorm-->
-                <label for ="item1">🥐 </label><input type="number" min="0">
-                <label for ="item2">☕ </label><input type="number" min="0">
-                <label for ="item3">🍞 </label><input type="number" min="0">
-                
-                <br>
-                <!--add on-->
-                <label for ="check1"> sugar? </label><input type="radio">
+        <section id="order-form" class="center">
+            <form class="vt323-regular" >
+                <fieldset>
+                    <!--order frorm-->
+                    <label for ="item-order" class="food-text"> <b>Order Items! <3</b>  </label>
+                    <br>
+                    🥐 <input type="number" min="0">
+                    ☕<input type="number" min="0">
+                    🍞 <input type="number" min="0">        
+                    <br><br>
+
+                    <!--add on-->
+                    <label for ="add-on" class="food-text" > <b>Add ons! </b> </label>
+                    <br>
+                    sugar? <input type="checkbox" > 
+                    spice? <input type="checkbox" > 
+                    a little nice? <input type="checkbox"> 
+                    <br><br>
+
+                    <!--textarea-->
+                    <label for ="textarea" class="food-text" > <b>Any exxxtra requests? </b> </label>
+                    <br>
+                    <textarea placeholder="Type here!" rows="5px" cols="30px"></textarea>
+                    <br><br>
+                    <!--submit-->
+                    <label for="sub button"></label><input type="submit" value="Go To Checkout">
+                </fieldset>
             </form>
         </section>
 
