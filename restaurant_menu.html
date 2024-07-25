@@ -47,11 +47,7 @@
             color: black ;
         }
 
-        body{
-            box-sizing:border-box ;
-	        display:flex;
-	        justify-content:center;
-        }
+       
       
 
         ul{
@@ -74,84 +70,106 @@
             font-size: 170%;  
         }
 
+        #xtrabig{
+            font-size: 200%;
+        }
+
+        .audio-container {
+        display: flex;
+        justify-content: center;
+        align-items: center 
+        }
+
         
     </style>
 </head>
-<body class="vt323-regular">
-    <header>
+    <body class="vt323-regular">
+        <header>
 
-        <h1 id="h1-center" class="vt323-regular"> Welcome to Clea's Coffee Shop!</h1>
+            <h1 id="h1-center" class="vt323-regular"> Welcome to Clea's Coffee Shop!</h1>
 
-        <figure>
-            <img id="bigimg-center" id ="header-img"
-            src="https://i.pinimg.com/originals/d8/9f/a3/d89fa383107571201d3b2673e4e9a51b.gif"
-            alt="calm resto~"
-            />
-        </figure>
+            <figure>
+                <img id="bigimg-center" id ="header-img"
+                src="https://i.pinimg.com/originals/d8/9f/a3/d89fa383107571201d3b2673e4e9a51b.gif"
+                alt="calm resto~"
+                />
+            </figure>
 
-        <nav>
-            <div class="container">
-                <ul class="myUL">
-                    <li> <a href="#menu" class="vt323-regular">Menu </a></li>
-                    <li> <a href="#order-form" class="vt323-regular"> Order Form</a></li>
-                </ul>
+            <div class="audio-container">
+                <audio src="song.mp3" controls >
+                    <p>If you are reading this, it is because your browser does not support the audio element.     </p>
+                </audio>
             </div>
-            
-        </nav>
 
-        <!--used chatggpt to make paragraphs about food bc lazy-->
-        <!--Menu Section-->
-        <section id="menu">
-            <article class="food-text" >
-                <h3 > CWASSAH </h3>
-                <img  class="food" src="crossaint.png"  alt="crossaint"/>
-                <p > A decadent croissant is a luxurious pastry with a golden, crisp exterior and a tender, airy interior that melts in the mouth. Its rich, buttery flavor, delicately balanced with a hint of sweetness and salt, makes each bite an indulgent experience and a symbol of culinary excellence. </p>
-            </article>
-            
-            <article class="food-text">
-                <h3> Cawffee</h3>
-                <img class ="food"src="coffee.png" alt="cawfee " class="food-right"/>
-                <p>Colombian coffee beans are renowned for their smooth, well-balanced flavor, often featuring bright acidity and notes of caramel, nuts, and chocolate. Grown in the ideal climate of the Andes mountains, these beans benefit from rich volcanic soil and perfect growing conditions, resulting in a consistently high-quality coffee. </p>
-            </article>
+            <nav>
+                <div class="container">
+                    <ul class="myUL">
+                        <li> <a href="#menu" class="vt323-regular">Menu </a></li>
+                        <li> <a href="#order-form" class="vt323-regular"> Order Form</a></li>
+                    </ul>
+                </div>
+                
+            </nav>
+        </header>
+        <main>
+            <!--used chatggpt to make paragraphs about food bc lazy-->
+            <!--Menu Section-->
+            <section id="menu">
+                <h2 class="center" id="xtrabig"> MENU-NATOR</h2>
+                <article class="food-text" >
+                    <h3 > CWASSAH </h3>
+                    <img  class="food" src="crossaint.png"  alt="crossaint"/>
+                    <p > A decadent croissant is a luxurious pastry with a golden, crisp exterior and a tender, airy interior that melts in the mouth. Its rich, buttery flavor, delicately balanced with a hint of sweetness and salt, makes each bite an indulgent experience and a symbol of culinary excellence. </p>
+                </article>
+                
+                <article class="food-text">
+                    <h3> Cawffee</h3>
+                    <img class ="food"src="coffee.png" alt="cawfee " class="food-right"/>
+                    <p>Colombian coffee beans are renowned for their smooth, well-balanced flavor, often featuring bright acidity and notes of caramel, nuts, and chocolate. Grown in the ideal climate of the Andes mountains, these beans benefit from rich volcanic soil and perfect growing conditions, resulting in a consistently high-quality coffee. </p>
+                </article>
 
-            <article class="food-text">
-                <h3>Let's Get tha Bred!! </h3>
-                <img class="food" src="https://64.media.tumblr.com/fb303999a55f458e02e0d6a26950f378/tumblr_n0rbgg8YpU1snt98wo1_640.gifv" alt=" " class="food-left"/>
-                <p> Cute cat bread, often shaped and decorated to resemble adorable feline faces, combines the charm of cats with the deliciousness of freshly baked bread. This whimsical treat is popular in cafes and bakeries, delighting both cat lovers and food enthusiasts with its playful appearance and soft, fluffy texture.</p>
-            </article>
-        </section>
+                <article class="food-text">
+                    <h3>Let's Get tha Bred!! </h3>
+                    <img class="food" src="https://64.media.tumblr.com/fb303999a55f458e02e0d6a26950f378/tumblr_n0rbgg8YpU1snt98wo1_640.gifv" alt=" " class="food-left"/>
+                    <p> Cute cat bread, often shaped and decorated to resemble adorable feline faces, combines the charm of cats with the deliciousness of freshly baked bread. This whimsical treat is popular in cafes and bakeries, delighting both cat lovers and food enthusiasts with its playful appearance and soft, fluffy texture.</p>
+                </article>
+            </section>
 
-        <!--Place Order Section-->
-        <section id="order-form" class="center">
-            <form class="vt323-regular" >
-                <fieldset>
-                    <!--order frorm-->
-                    <label for ="item-order" class="food-text"> <b>Order Items! <3</b>  </label>
-                    <br>
-                    🥐 <input type="number" min="0">
-                    ☕<input type="number" min="0">
-                    🍞 <input type="number" min="0">        
+            <!--Place Order Section-->
+            <section id="order-form" class="center">
+                <form class="vt323-regular" >
+                    <fieldset>
+                        <legend class="bigtext"> Order Form!</legend>
+                        <!--order frorm-->
+                        <label for ="item-order" class="food-text"> <b>yum yums <3</b>  </label>
+                        <br>
+                        <input type="number" min="0"> 🥐
+                        <input type="number" min="0">☕
+                        <input type="number" min="0"> 🍞     
+                        <br><br>
+
+                        <!--add on-->
+                        <label for ="add-on" class="food-text" > <b>Add ons! </b> </label>
+                        <br>
+                        sugar? <input type="checkbox" > 
+                        spice? <input type="checkbox" > 
+                        a little nice? <input type="checkbox"> 
+                        <br><br>
+
+                        <!--textarea-->
+                        <label for ="textarea" class="food-text" > <b>Any exxxtra requests? </b> </label>
+                        <br>
+                        <textarea placeholder="Type here!" rows="5px" cols="30px"></textarea>
+                        <br><br>
+                        <!--submit-->
+                        <label for="sub button"></label><input type="submit" class="vt323-regular" value="Go To Checkout">
+                    </fieldset>
                     <br><br>
-
-                    <!--add on-->
-                    <label for ="add-on" class="food-text" > <b>Add ons! </b> </label>
-                    <br>
-                    sugar? <input type="checkbox" > 
-                    spice? <input type="checkbox" > 
-                    a little nice? <input type="checkbox"> 
-                    <br><br>
-
-                    <!--textarea-->
-                    <label for ="textarea" class="food-text" > <b>Any exxxtra requests? </b> </label>
-                    <br>
-                    <textarea placeholder="Type here!" rows="5px" cols="30px"></textarea>
-                    <br><br>
-                    <!--submit-->
-                    <label for="sub button"></label><input type="submit" value="Go To Checkout">
-                </fieldset>
-            </form>
-        </section>
-
-    </header>
-</body>
+                </form>
+            </section>
+        </main>
+        <footer>   
+            <p> Made with love by @murkles (Clea)</p>
+        </footer>
+    </body>
 </html>
