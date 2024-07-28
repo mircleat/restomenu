@@ -73,6 +73,7 @@
         align-items: center 
         }
 
+
         
     </style>
 </head>
@@ -133,29 +134,32 @@
                 <form class="vt323-regular" >
                     <fieldset>
                         <legend class="bigtext"> Order Form!</legend>
+                        
                         <!--order frorm-->
-                        <label for ="item-order" class="food-text"> <b>yum yums <3</b>  </label>
+                        <label  for ="item-order" class="food-text"> <b>yum yums <3</b>  </label>
                         <br>
-                        <input type="number" min="0"> 🥐
-                        <input type="number" min="0">☕
-                        <input type="number" min="0"> 🍞     
+                        <label for ="item1" > <p>🥐</p></label> <input type="number" min="0" id="item1">
+                        <label for ="item2" > <p>☕</p></label><input type="number" min="0" id="item2">
+                        <label for ="item3" > <p>🍞 </p></label> <input type="number" min="0" id="item3">   
                         <br><br>
 
                         <!--add on-->
-                        <label for ="add-on" class="food-text" > <b>Add ons! </b> </label>
+                        <b class="food-text">Add ons! </b> 
                         <br>
-                        sugar? <input type="checkbox" > 
-                        spice? <input type="checkbox" > 
-                        a little nice? <input type="checkbox"> 
+                        <span>
+                            <input type="checkbox" id="chk1" > <label for ="chk1" > <p>sugar?</p></label> 
+                            <input type="checkbox" id="chk2" > <label for ="chk2" > <p>spice?</p></label> 
+                            <input type="checkbox" id="chk1" > <label for ="chk1" > <p>a little nice?</p></label> 
+                        </span>
                         <br><br>
 
                         <!--textarea-->
                         <label for ="textarea" class="food-text" > <b>Any exxxtra requests? </b> </label>
                         <br>
-                        <textarea placeholder="Type here!" rows="5px" cols="30px"></textarea>
+                        <textarea id="textarea" placeholder="Type here!" rows="5px" cols="30px"></textarea>
                         <br><br>
                         <!--submit-->
-                        <label for="sub button"></label><input type="submit" class="vt323-regular" value="Go To Checkout">
+                        <label for="sub-button"></label><input id="sub-button" type="submit" class="vt323-regular" value="Go To Checkout">
                     </fieldset>
                     <br><br>
                 </form>
